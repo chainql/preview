@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,173 +20,307 @@
       gtag("config", "G-ZRZZ93XJ5V");
     </script>
 
+    <!-- Tailwind CSS -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
     />
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-  <body class="bg-gray-50 text-gray-800 font-sans">
-    <header class="bg-white shadow">
+
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow sticky top-0 z-50">
       <div
-        class="max-w-7xl mx-auto px-4 py-6 flex justify-between items-center"
+        class="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center"
       >
-        <h1 class="text-2xl font-bold">Padm</h1>
+        <h1 class="text-2xl font-extrabold text-indigo-600">Padm</h1>
         <a
           href="https://forms.gle/Smztwg8kBAkgZbPG9"
           target="_blank"
-          class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition"
-          >Get Early Access</a
+          class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-5 py-2 rounded-lg hover:opacity-90 transition font-semibold shadow"
         >
+          Get Early Access
+        </a>
       </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 py-10">
-      <section class="text-center mb-16">
-        <h2 class="text-4xl font-bold mb-4">
+    <!-- Hero Section -->
+    <section
+      class="bg-gradient-to-br from-indigo-600 to-purple-600 text-white text-center py-24 px-4"
+    >
+      <div class="max-w-3xl mx-auto">
+        <h2 class="text-5xl font-extrabold leading-tight mb-6">
           Blockchain Infrastructure for Healthcare
         </h2>
-        <p class="text-lg text-gray-600 mb-6 max-w-2xl mx-auto">
-          Padm helps healthcare institutions create and manage their own
-          permissioned blockchain networks — enabling secure, compliant, and
-          collaborative data sharing.
+        <p class="text-xl mb-8 opacity-90">
+          Padm helps healthcare institutions build permissioned blockchain
+          networks — enabling secure, compliant, and collaborative data sharing.
         </p>
         <a
           href="https://forms.gle/Smztwg8kBAkgZbPG9"
-          target="_blank"
-          class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition"
-          >Get Early Access</a
+          class="inline-block bg-white text-indigo-700 font-semibold px-6 py-3 rounded-lg hover:bg-gray-100 transition shadow-lg"
         >
-      </section>
+          Join the Waitlist
+        </a>
+      </div>
+    </section>
 
-      <section class="mb-16">
-        <h3 class="text-2xl font-semibold mb-6 text-center">Use Cases</h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">
-              Supply Chain Traceability
-            </h4>
-            <p class="text-sm text-gray-600">
-              Monitor drugs and equipment end-to-end with secure, tamper-proof
-              tracking.
-            </p>
+    <!-- Platform Highlights -->
+    <section class="max-w-7xl mx-auto px-4 py-20">
+      <h3 class="text-4xl font-bold text-center mb-16">Platform Highlights</h3>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Card Template -->
+        <div
+          class="backdrop-blur bg-white/80 border border-gray-200 p-6 rounded-2xl shadow hover:shadow-md transition"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="rocket" class="w-6 h-6"></i>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Health Data Exchange</h4>
-            <p class="text-sm text-gray-600">
-              Seamless and secure sharing of patient records across healthcare
-              systems.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Clinical Trial Integrity</h4>
-            <p class="text-sm text-gray-600">
-              Transparent and auditable trial data, consents, and outcomes
-              on-chain.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Consent Management</h4>
-            <p class="text-sm text-gray-600">
-              Capture and verify patient consent in real time, with full
-              traceability.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Doctor Verification</h4>
-            <p class="text-sm text-gray-600">
-              Validate practitioner credentials and history to prevent fraud.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Claims Automation</h4>
-            <p class="text-sm text-gray-600">
-              Streamline insurance processing with secure, real-time validation.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Donation Chain Tracking</h4>
-            <p class="text-sm text-gray-600">
-              Track organs and blood ethically from donor to recipient.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Drug Recall Alerts</h4>
-            <p class="text-sm text-gray-600">
-              Instantly identify and trace faulty or counterfeit drugs.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Telehealth Audit Trail</h4>
-            <p class="text-sm text-gray-600">
-              Log remote diagnostics and AI outputs for compliance and trust.
-            </p>
-          </div>
+          <h4 class="font-semibold text-lg mb-2">Launch in Seconds</h4>
+          <p class="text-gray-600">
+            Spin up blockchain network nodes in 2–5 seconds.
+          </p>
         </div>
-      </section>
 
-      <section class="mb-16">
-        <h3 class="text-2xl font-semibold mb-6 text-center">
-          Platform Highlights
-        </h3>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Launch in Seconds</h4>
-            <p class="text-sm text-gray-600">
-              Spin up blockchain networks in 2–5 seconds.
-            </p>
+        <div
+          class="backdrop-blur bg-white/80 border border-gray-200 p-6 rounded-2xl shadow hover:shadow-md transition"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="layers" class="w-6 h-6"></i>
           </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Modular Hub Architecture</h4>
-            <p class="text-sm text-gray-600">
-              Organize networks and environments flexibly across orgs.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Smart Contract Tools</h4>
-            <p class="text-sm text-gray-600">
-              Auto-generate APIs and manage chaincode with ease.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Pay-as-You-Go</h4>
-            <p class="text-sm text-gray-600">
-              Transparent pricing from $19 to enterprise scale.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">No Vendor Lock-In</h4>
-            <p class="text-sm text-gray-600">
-              Use any Hyperledger Fabric version, deploy anywhere.
-            </p>
-          </div>
-          <div class="bg-white p-6 rounded-lg shadow">
-            <h4 class="font-semibold text-lg mb-2">Built for Healthcare</h4>
-            <p class="text-sm text-gray-600">
-              Compliance-first and aligned with real clinical workflows.
-            </p>
-          </div>
+          <h4 class="font-semibold text-lg mb-2">Modular Hub Architecture</h4>
+          <p class="text-gray-600">
+            Organize networks and environments flexibly across orgs.
+          </p>
         </div>
-      </section>
 
-      <section class="text-center mb-16">
-        <h3 class="text-xl font-semibold mb-4">
-          We’re opening access gradually
-        </h3>
-        <p class="text-gray-600 mb-6 max-w-xl mx-auto">
-          If you’re a healthcare innovator, enterprise, or developer—register
-          now for early access and updates.
-        </p>
+        <div
+          class="backdrop-blur bg-white/80 border border-gray-200 p-6 rounded-2xl shadow hover:shadow-md transition"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="code" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Smart Contract Tools</h4>
+          <p class="text-gray-600">
+            Auto-generate APIs and manage contracts with ease.
+          </p>
+        </div>
+
+        <div
+          class="backdrop-blur bg-white/80 border border-gray-200 p-6 rounded-2xl shadow hover:shadow-md transition"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="dollar-sign" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Pay-as-You-Go</h4>
+          <p class="text-gray-600">
+            Transparent pricing from $19 to enterprise scale.
+          </p>
+        </div>
+
+        <div
+          class="backdrop-blur bg-white/80 border border-gray-200 p-6 rounded-2xl shadow hover:shadow-md transition"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="link" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">No Vendor Lock-In</h4>
+          <p class="text-gray-600">
+            Use any Hyperledger Fabric version, deploy anywhere.
+          </p>
+        </div>
+
+        <div
+          class="backdrop-blur bg-white/80 border border-gray-200 p-6 rounded-2xl shadow hover:shadow-md transition"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Built for Healthcare</h4>
+          <p class="text-gray-600">
+            Compliance-first and aligned with real clinical workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="bg-gray-100 py-20 px-4">
+      <h3 class="text-4xl font-bold text-center mb-16">Use Cases</h3>
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10"
+      >
+        <!-- Reusing card styles -->
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="package-check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Supply Chain Traceability</h4>
+          <p class="text-gray-600">
+            Monitor drugs and equipment end-to-end with secure, tamper-proof
+            tracking.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="file-check-2" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Health Data Exchange</h4>
+          <p class="text-gray-600">
+            Seamless and secure sharing of patient records across healthcare
+            systems.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="clipboard-list" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Clinical Trial Integrity</h4>
+          <p class="text-gray-600">
+            Transparent and auditable trial data, consents, and outcomes
+            on-chain.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="user-check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Consent Management</h4>
+          <p class="text-gray-600">
+            Capture and verify patient consent in real time, with full
+            traceability.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="badge-check" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Doctor Verification</h4>
+          <p class="text-gray-600">
+            Validate practitioner credentials and history to prevent fraud.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="credit-card" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Claims Automation</h4>
+          <p class="text-gray-600">
+            Streamline insurance processing with secure, real-time validation.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="dna" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Donation Chain Tracking</h4>
+          <p class="text-gray-600">
+            Track organs and blood ethically from donor to recipient.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="alert-triangle" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Drug Recall Alerts</h4>
+          <p class="text-gray-600">
+            Instantly identify and trace faulty or counterfeit drugs.
+          </p>
+        </div>
+
+        <div
+          class="bg-white p-6 rounded-2xl shadow hover:shadow-md transition text-left"
+        >
+          <div class="mb-4 text-indigo-600">
+            <i data-lucide="notebook-text" class="w-6 h-6"></i>
+          </div>
+          <h4 class="font-semibold text-lg mb-2">Telehealth Audit Trail</h4>
+          <p class="text-gray-600">
+            Log remote diagnostics and AI outputs for compliance and trust.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="text-center py-24 bg-white">
+      <h3 class="text-3xl font-bold mb-6">Access is rolling out soon</h3>
+      <p class="text-gray-600 max-w-xl mx-auto mb-8">
+        If you’re a healthcare innovator, enterprise, or developer—register now
+        for early access and updates.
+      </p>
+      <a
+        href="https://forms.gle/Smztwg8kBAkgZbPG9"
+        target="_blank"
+        class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold hover:opacity-90 transition"
+      >
+        Join Early Access
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-white text-gray-500 text-center py-6 text-sm border-t">
+      <div class="flex items-center justify-center space-x-4 mb-2">
+        <a href="https://x.com/PadmHQ" class="hover:text-indigo-600"
+          ><i data-lucide="twitter"></i
+        ></a>
+        <a href="https://github.com/padm-io" class="hover:text-indigo-600"
+          ><i data-lucide="github"></i
+        ></a>
         <a
-          href="https://forms.gle/Smztwg8kBAkgZbPG9"
-          target="_blank"
-          class="bg-indigo-600 text-white px-6 py-3 rounded hover:bg-indigo-700 transition"
-          >Join Early Access</a
-        >
-      </section>
-    </main>
-
-    <footer class="bg-white text-center text-gray-500 py-6 text-sm">
-      &copy; 2025 Padm. All rights reserved.
+          href="https://www.linkedin.com/company/padm-official"
+          class="hover:text-indigo-600"
+          ><i data-lucide="linkedin"></i
+        ></a>
+        <a href="https://www.youtube.com/@PadmHQ" class="hover:text-indigo-600"
+          ><i data-lucide="youtube"></i
+        ></a>
+        <a href="https://www.instagram.com/padmhq" class="hover:text-indigo-600"
+          ><i data-lucide="instagram"></i
+        ></a>
+      </div>
+      <p>&copy; 2025 Padm. All rights reserved.</p>
     </footer>
+
+    <script>
+      lucide.createIcons();
+    </script>
   </body>
 </html>
